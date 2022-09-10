@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 //gestionar coneccion a bases de datos en mongo.
-
-const url = 'mongodb+srv://Cossio:99122608880juan@adsi2364482.rz6w0.mongodb.net/?retryWrites=true&w=majority'
+const dbname= "TiendaPOS"
+const url = `mongodb+srv://Cossio:99122608880juan@adsi2364482.rz6w0.mongodb.net/?retryWrites=true&w=majority`
 
 const conectionParams = {
+    collection: 'Productos',
     useNewUrlParser: true,
     useUnifiedTopology: true
  }
